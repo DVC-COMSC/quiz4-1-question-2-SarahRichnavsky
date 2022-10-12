@@ -15,6 +15,27 @@ int main()
         // **********************
         // Your code 
         // **********************
-        
+
+	cout<<"Enter weight and distance ";
+	cin>> weight >> distance;
+
+	if (weight<=2){
+		rate = rate1;
+	}
+	if (6>weight>2){
+		rate = rate2;
+	}
+	if (10<weight>6){
+		rate = rate3;
+	}
+	if (10<weight<20){
+		rate = 4
+	}
+	if (weight>=20){
+		cout<<"No weight over 20 lb";
+	}
+
+        total_charge = (distance/500)*rate;
 	cout << total_charge << endl;
+
 }
