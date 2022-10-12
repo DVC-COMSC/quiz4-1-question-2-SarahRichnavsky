@@ -25,7 +25,7 @@ int main()
 	if (6>weight>2){
 		rate = rate2;
 	}
-	if (10<weight>6){
+	if (10>weight>6){
 		rate = rate3;
 	}
 	if (10<weight<20){
@@ -36,6 +36,6 @@ int main()
 	}
 
         total_charge = (distance/500)*rate;
-	cout << total_charge << endl;
-
+	cout << total_charge << endl ;
+return 0; 
 }
