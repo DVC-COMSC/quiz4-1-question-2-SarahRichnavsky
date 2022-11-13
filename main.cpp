@@ -1,4 +1,4 @@
-// Complete the following program. 
+// Complete the following program.
 #include <iostream>
 using namespace std;
 
@@ -11,31 +11,39 @@ int main()
 	double total_charge;
 	double weight, distance, rate;
 
-	
-        // **********************
-        // Your code 
-        // **********************
+	// **********************
+	// Your code
+	// **********************
 
-	cout<<"Enter weight and distance ";
-	cin>> weight >> distance;
+	cout << "Enter weight and distance ";
+	cin >> weight >> distance;
 
-	if (weight<=2){
+	if (weight <= 2)
+	{
 		rate = rate1;
 	}
-	if (6>weight>2){
+	// if (6 > weight > 2)
+	if (weight < 6)
+	{
 		rate = rate2;
 	}
-	if (10>weight>6){
+	// if (10 > weight > 6)
+	if (weight < 10)
+	{
 		rate = rate3;
 	}
-	if (10<weight<20){
-		rate = 4
+	// if (10 < weight < 20)
+	if (weight < 20)
+	{
+		rate = 4;
 	}
-	if (weight>=20){
-		cout<<"No weight over 20 lb";
+	// if (weight >= 20)
+	else
+	{
+		cout << "No weight over 20 lb";
 	}
 
-        total_charge = (distance/500)*rate;
-	cout << total_charge << endl ;
-return 0; 
+	total_charge = (distance / 500) * rate;
+	cout << total_charge << endl;
+	return 0;
 }
