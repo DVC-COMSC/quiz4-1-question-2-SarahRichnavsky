@@ -16,7 +16,9 @@ int main()
 	// **********************
 
 	cout << "Enter weight and distance ";
-	cin >> weight >> distance;
+	// cin >> weight >> distance;
+	cin >> weight;
+	cin >> distance;
 
 	if (weight <= 2)
 	{
